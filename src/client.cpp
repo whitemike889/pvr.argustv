@@ -323,10 +323,10 @@ void OnPowerSavingDeactivated()
 {
 }
 
-//-- GetAddonCapabilities -----------------------------------------------------
+//-- GetCapabilities -----------------------------------------------------
 // Tell XBMC our requirements
 //-----------------------------------------------------------------------------
-PVR_ERROR GetAddonCapabilities(PVR_ADDON_CAPABILITIES *pCapabilities)
+void GetCapabilities(PVR_ADDON_CAPABILITIES *pCapabilities)
 {
   XBMC->Log(LOG_DEBUG, "->GetProperties()");
 
@@ -342,8 +342,6 @@ PVR_ERROR GetAddonCapabilities(PVR_ADDON_CAPABILITIES *pCapabilities)
   pCapabilities->bSupportsChannelScan        = false;
   pCapabilities->bSupportsLastPlayedPosition = true;
   pCapabilities->bSupportsRecordingPlayCount = true;
-
-  return PVR_ERROR_NO_ERROR;
 }
 
 PVR_ERROR GetStreamProperties(PVR_STREAM_PROPERTIES *pProperties)
