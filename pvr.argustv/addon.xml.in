@@ -6,10 +6,10 @@
   provider-name="Fred Hoogduin, Marcel Groothuis">
   <requires>
     <c-pluff version="0.1"/>
-    <import addon="xbmc.pvr" version="5.2.3"/>
+    <import addon="kodi.pvr" version="5.2.3"/>
   </requires>
   <extension
-    point="xbmc.pvrclient"
+    point="kodi.pvrclient"
     library_@PLATFORM@="@LIBRARY_FILENAME@"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="af_ZA">Kodi voorprogram vir die ARGUS TV PVR http://www.argus-tv.com//</summary>
